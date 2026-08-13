@@ -39,6 +39,8 @@ resource "aws_instance" "this" {
 
   iam_instance_profile = var.instance_profile_name
 
+  key_name = var.key_name
+
   associate_public_ip_address = true
 
   user_data = <<-EOF

@@ -32,3 +32,8 @@ variable "ssh_cidr" {
   description = "CIDR allowed for SSH"
   type        = string
 }
+
+variable "key_name" {
+  description = "EC2 key pair name"
+  type        = string
+}
